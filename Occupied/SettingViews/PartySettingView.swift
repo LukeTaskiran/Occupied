@@ -5,10 +5,10 @@ import SwiftUI
 struct PartySettingView: View {
     var body: some View {
         TabView {
-            ChatWithAIView()
+            PhoneCallView()
                 .tabItem {
-                    Image(systemName: "message")
-                    Text("Chat with AI")
+                    Image(systemName: "phone.connection.fill")
+                    Text("Fake Call")
                 }
                 .tag(0)
             
@@ -18,21 +18,22 @@ struct PartySettingView: View {
                     Text("Notifications")
                 }
                 .tag(1)
-            
-            WeatherView()
+                                
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "cloud.sun")
-                    Text("Weather")
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
                 }
                 .tag(2)
-            
             ImageMatchingView()
                 .tabItem {
                     Image(systemName: "tortoise.fill")
                     Text("Endless Scroll")
-                        .tag(3)
+                }
+                .tag(3)
+
                 }
                 .navigationBarTitle("Party Setting", displayMode: .inline)
         }
     }
-}
+

@@ -12,12 +12,19 @@ struct OfficeSettingView: View {
                 }
                 .tag(0)
 
-            PlayGamesView()
+            GameLibraryView()
                 .tabItem {
                     Image(systemName: "gamecontroller")
-                    Text("Play Games")
+                    Text("Game Library")
                 }
                 .tag(1)
+            PhoneCallView()
+                .tabItem {
+                    Image(systemName: "phone.connection.fill")
+                    Text("Fake Call")
+                }
+                .tag(2)
+            
         }
         .navigationBarTitle("Office Setting", displayMode: .inline)
     }
