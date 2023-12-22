@@ -84,7 +84,7 @@ struct IncomingCallView: View {
     var body: some View {
         @State var animateGradient = false
         ZStack{
-            LinearGradient(colors: [.blue, .green], startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(colors: [.gray, .orange], startPoint: .topLeading, endPoint: .bottomTrailing)
                 .hueRotation(.degrees(animateGradient ? 90 : 0))
                 .ignoresSafeArea()
                 .onAppear {
@@ -121,35 +121,75 @@ struct IncomingCallView: View {
                       
                 
                 HStack {
-                    Button {
-                        declineAction()
-                    }label: {
-                        Image(systemName: "phone.down.fill")
-                            .resizable()
-                            .scaledToFit()
+                    VStack{
+                        
+                        Button {
+                            declineAction()
+                        }label: {
+                            VStack{
+                                
+                                Image(systemName: "alarm.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Remind Me")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                
+                            }
+                            
+                        }
+                        .frame(width: .infinity, height: 50, alignment: .center)
+                        .padding()
+                        .foregroundColor(.white)
+                        
+                        Button {
+                            declineAction()
+                        }label: {
+                            Image(systemName: "phone.down.fill")
+                                .resizable()
+                                .scaledToFit()
+                        }
+                        .frame(width: 60, height: 60, alignment: .center)
+                        .padding()
+                        .background(Color.red)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
+                        
                     }
-                    .frame(width: 60, height: 60, alignment: .center)
-                    .padding()
-                    .background(Color.red)
-                    .foregroundColor(.white)
-                    .clipShape(Circle())
-                    
-                    
                     Spacer(minLength: 40)
                     
-                    Button{
-                        acceptCall()
-                    } label: {
-                        Image(systemName: "phone.fill")
-                            .resizable()
-                            .scaledToFit()
-                            .padding(.all,10)
+                    VStack{
+                        
+                        Button {
+                            declineAction()
+                        }label: {
+                            VStack{
+                                                               
+                                Image(systemName: "message.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                Text("Message")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                        .frame(width: .infinity, height: 50, alignment: .center)
+                        .padding()
+                        .foregroundColor(.white)
+                        Button{
+                            acceptCall()
+                        } label: {
+                            Image(systemName: "phone.fill")
+                                .resizable()
+                                .scaledToFit()
+                                .padding(.all,10)
+                        }
+                        .frame(width: 60, height: 60, alignment: .center)
+                        .padding()
+                        .background(Color.green)
+                        .foregroundColor(.white)
+                        .clipShape(Circle())
                     }
-                    .frame(width: 60, height: 60, alignment: .center)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .clipShape(Circle())
                     
                 }.frame(maxHeight: .infinity, alignment: .bottom)                .padding(.all,40)
                 

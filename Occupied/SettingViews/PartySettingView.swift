@@ -19,19 +19,19 @@ struct PartySettingView: View {
                 }
                 .tag(1)
                                 
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gearshape.fill")
-                    Text("Settings")
-                }
-                .tag(2)
             ImageMatchingView()
                 .tabItem {
                     Image(systemName: "tortoise.fill")
                     Text("Endless Scroll")
                 }
-                .tag(3)
+                .tag(2)
 
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
+                }
+                .tag(3)
                 }
                 .navigationBarTitle("Party Setting", displayMode: .inline)
         }
