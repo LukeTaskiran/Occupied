@@ -55,6 +55,7 @@
 		EAE9EF882B3D4842005CEC67 /* BannerAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF872B3D4842005CEC67 /* BannerAdVC.swift */; };
 		EAE9EF8A2B3D4899005CEC67 /* SwiftUIBannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF892B3D4899005CEC67 /* SwiftUIBannerAd.swift */; };
 		EAEFA3EB2B362268007CE67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFA3EA2B362268007CE67D /* AppDelegate.swift */; };
+		EAF2CD212B3FE09E00B721AA /* FidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF2CD202B3FE09E00B721AA /* FidgetView.swift */; };
 		EAFA30962B338B930071C6B0 /* GameLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA30952B338B930071C6B0 /* GameLibraryView.swift */; };
 		EAFA309B2B3398440071C6B0 /* PhoneCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */; };
 		EAFE54232B3DF03200B3C2C1 /* InterstitalAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54222B3DF03200B3C2C1 /* InterstitalAdView.swift */; };
@@ -135,6 +136,7 @@
 		EAE9EF872B3D4842005CEC67 /* BannerAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdVC.swift; sourceTree = "<group>"; };
 		EAE9EF892B3D4899005CEC67 /* SwiftUIBannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBannerAd.swift; sourceTree = "<group>"; };
 		EAEFA3EA2B362268007CE67D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EAF2CD202B3FE09E00B721AA /* FidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FidgetView.swift; sourceTree = "<group>"; };
 		EAFA30952B338B930071C6B0 /* GameLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibraryView.swift; sourceTree = "<group>"; };
 		EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCallView.swift; sourceTree = "<group>"; };
 		EAFE54222B3DF03200B3C2C1 /* InterstitalAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitalAdView.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				EA2E9C612B2D4AF300590787 /* OccupiedApp.swift */,
 				EAEFA3EA2B362268007CE67D /* AppDelegate.swift */,
 				EA2E9C632B2D4AF300590787 /* ContentView.swift */,
+				EAF2CD202B3FE09E00B721AA /* FidgetView.swift */,
 				EA2E9C652B2D4AF400590787 /* Assets.xcassets */,
 				EA2E9C672B2D4AF400590787 /* Preview Content */,
 			);
@@ -570,6 +573,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2E9CBE2B2D4FF100590787 /* PlayGamesView.swift in Sources */,
+				EAF2CD212B3FE09E00B721AA /* FidgetView.swift in Sources */,
 				EA880A9E2B327F7C003B7E8B /* Card.swift in Sources */,
 				EA2E9C642B2D4AF300590787 /* ContentView.swift in Sources */,
 				EAFE54232B3DF03200B3C2C1 /* InterstitalAdView.swift in Sources */,

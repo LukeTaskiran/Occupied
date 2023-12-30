@@ -73,7 +73,7 @@ struct ContentView: View {
 struct GrowingButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .padding()
+            .padding(.vertical,10)
             .background(.blue)
             .foregroundStyle(.white)
             .clipShape(Capsule())
@@ -90,12 +90,14 @@ struct SettingButtonView: View {
             action()
         }) {
             Text(setting)
-                .font(.headline)
+                .font(.system(size: 24, weight: .semibold, design: .rounded))
                 .padding()
                 .frame(maxWidth: .infinity)
                 .background(Color.blue)
+            
         }
         .buttonStyle(GrowingButton())
+        .padding(.horizontal,15)
     }
 }
 
@@ -108,7 +110,7 @@ struct HeaderView: View {
                 .foregroundStyle(.white)
                 .padding(.top, 5)
 
-            Text("Choose your setting")
+            Text("Select your setting")
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundStyle(.white)

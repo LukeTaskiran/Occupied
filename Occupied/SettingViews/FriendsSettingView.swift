@@ -18,12 +18,18 @@ struct FriendsSettingView: View {
                     Text("Notifications")
                 }
                 .tag(1)
+            CreativeFidgetView()
+                .tabItem {
+                    Image(systemName: "figure.run.circle.fill")
+                    Text("Fidget")
+                }
+                .tag(2)
             GameLibraryView()
                 .tabItem {
                     Image(systemName: "gamecontroller")
                     Text("Game Library")
                 }
-                .tag(2)
+                .tag(3)
         }
         .navigationBarTitle("Friends Setting", displayMode: .inline)
     }
