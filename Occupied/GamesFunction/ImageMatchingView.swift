@@ -5,19 +5,21 @@ struct ImageMatchingView: View {
     @State private var isMatched: Bool = false
 
     @State private var animalImages = [
-        "alli", "dog", "Otter", "alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter",
+        "alli", "dog", "Otter", "Otter", "dog", "Otter","alli", "Otter", "Otter","dog", "dog", "Otter","alli", "Otter", "Otter","alli", "dog", "dog","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "dog","alli", "dog", "dog","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","Otter", "dog", "Otter", "Otter","alli", "dog", "Otter","alli", "dog", "Otter","Otter", "dog", "Otter","Otter","alli", "dog", "Otter","alli", "dog", "Otter","Otter", "dog", "Otter","Otter"
     ]
 
     var body: some View {
         VStack {
-            Text("Match the animal:")
+            Text("Match the animal (scroll and look busy)")
                 .font(.headline)
-                .padding()
+                .padding(.top,20)
+            
 
             Text(animalImages[correctAnimalIndex])
                 .font(.title)
                 .fontWeight(.bold)
-                .padding()
+                .padding(.bottom,10)
+                .padding(.top,5)
 
             Button(action: {
                 shuffleAnimalImages()

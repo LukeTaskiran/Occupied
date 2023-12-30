@@ -5,10 +5,10 @@ import SwiftUI
 struct OfficeSettingView: View {
     var body: some View {
         TabView {
-            ChatWithAIView()
+            Notes()
                 .tabItem {
                     Image(systemName: "message")
-                    Text("Chat with AI")
+                    Text("Notes")
                 }
                 .tag(0)
 

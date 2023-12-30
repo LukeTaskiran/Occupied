@@ -1,0 +1,6 @@
+framework module Pods_Occupied_OccupiedUITests {
+  umbrella header "Pods-Occupied-OccupiedUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

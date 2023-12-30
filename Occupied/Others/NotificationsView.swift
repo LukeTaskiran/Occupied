@@ -23,6 +23,7 @@ struct NotificationsView: View {
             .pickerStyle(SegmentedPickerStyle())
             .padding()
 
+                        
             if selectedNotificationType == .scheduled {
                 DatePicker("Select Date", selection: $notificationDate, displayedComponents: [.date, .hourAndMinute])
                     .datePickerStyle(WheelDatePickerStyle())
@@ -30,13 +31,22 @@ struct NotificationsView: View {
                     .padding()
             }
 
+            Text("Modify the message you wish to receive")
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.black)
+                .foregroundColor(.white)
+                .cornerRadius(8)
+            
+            Text("Header:").multilineTextAlignment(.leading).padding(.top,5)
             TextField("Notification Header", text: $notificationHeader)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
 
+            Text("Paragraph:")
+                .multilineTextAlignment(.leading)
             TextField("Notification Message", text: $notificationMessage)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
+                .padding(.bottom,10)
 
             Button(action: {
                 withAnimation {
@@ -50,7 +60,7 @@ struct NotificationsView: View {
                     .foregroundColor(.white)
                     .cornerRadius(8)
             }
-            .disabled(disableNotifications)
+            
 
             Spacer()
 
@@ -66,10 +76,7 @@ struct NotificationsView: View {
     }
 
     private func scheduleNotification() {
-        if disableNotifications {
-            return
-        }
-
+        
         let content = UNMutableNotificationContent()
         content.title = notificationHeader
         content.body = notificationMessage
@@ -82,28 +89,9 @@ struct NotificationsView: View {
         case .scheduled:
             let components = Calendar.current.dateComponents([.hour, .minute], from: notificationDate)
             trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: false)
-        case .spam:
-            // Fix crash by using a longer time interval for spam
-            trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
         }
 
-        let turnOffAction = UNNotificationAction(
-            identifier: "TURN_OFF_ACTION",
-            title: "Turn Off",
-            options: []
-        )
-
-        let category = UNNotificationCategory(
-            identifier: "CUSTOM_CATEGORY",
-            actions: [turnOffAction],
-            intentIdentifiers: [],
-            options: []
-        )
-
-        UNUserNotificationCenter.current().setNotificationCategories([category])
-
-        content.categoryIdentifier = "CUSTOM_CATEGORY"
-
+        // Calculate the total duration for which spam notifications will be scheduled
         let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
 
         UNUserNotificationCenter.current().add(request) { error in
@@ -112,6 +100,7 @@ struct NotificationsView: View {
             } else {
                 print("Notification scheduled successfully!")
                 self.showNotificationScheduled = true
+
             }
         }
     }
@@ -119,8 +108,8 @@ struct NotificationsView: View {
 
 enum NotificationType: String, CaseIterable {
     case scheduled = "Scheduled"
-    case immediate = "Immediate"
-    case spam = "Spam"
+    case immediate = "Celebrity"
+
 
     var notificationText: String {
         switch self {
@@ -128,9 +117,13 @@ enum NotificationType: String, CaseIterable {
             return "Acting Busy Immediately"
         case .scheduled:
             return "Acting Busy at a Scheduled Time"
-        case .spam:
-            return "Spamming Notifications"
         }
+    }
+}
+
+struct NotificationsView_Previews: PreviewProvider {
+    static var previews: some View {
+        NotificationsView()
     }
 }
 

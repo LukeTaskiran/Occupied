@@ -20,13 +20,15 @@ struct ContentView: View {
                     }
                 VStack {
                     HeaderView()
-                        .padding(.bottom, 40)
+                        .padding(.top,20)
+                        .padding(.bottom,20)
                     
                     
                     // Setting selection buttons
                     SettingGridView(selectedSetting: $selectedSetting) {
                         self.isShowingSelectedSetting = true
                     }
+                    .padding(.bottom,20)
                     .transition(.opacity)
                     
                     // Navigation link to the selected setting
@@ -37,8 +39,13 @@ struct ContentView: View {
                         EmptyView()
                     }
                     .hidden()
+                    
+                    
+                    SwiftUIBannerAd(adPosition: .bottom, adUnitId: "ca-app-pub-3940256099942544/2934735716")
+                        .frame(height: 125,alignment: .center)
+                        .padding()
                 }
-                .padding(.horizontal, 20)
+                .padding(.horizontal, 5)
                 .navigationBarTitle("", displayMode: .inline)
                 .navigationBarHidden(true)
             }
@@ -55,9 +62,6 @@ struct ContentView: View {
                 return AnyView(PartySettingView())
             case "Friends":
                 return AnyView(FriendsSettingView())
-            /*case "Other":
-                return AnyView(OtherSettingView())
-            // Add similar cases for other settings...*/
             default:
                 return AnyView(EmptyView())
             }
@@ -98,17 +102,17 @@ struct SettingButtonView: View {
 struct HeaderView: View {
     var body: some View {
         VStack {
-            Text("BusyPulse")
+            Text("Occupied")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .foregroundStyle(.white)
-                .padding(.top, 20)
+                .padding(.top, 5)
 
             Text("Choose your setting")
                 .font(.title)
                 .fontWeight(.semibold)
                 .foregroundStyle(.white)
-                .padding(.top, 20)
+                .padding(.top, 10)
         }
     }
 }
@@ -118,7 +122,7 @@ struct SettingGridView: View {
     var onSettingSelected: () -> Void
 
     var body: some View {
-        VStack(spacing: 30) {
+        VStack(spacing: 40) {
             ForEach(["Office", "Party", "Friends"], id: \.self) { setting in
                 SettingButtonView(setting: setting) {
                     self.selectedSetting = setting
@@ -126,6 +130,7 @@ struct SettingGridView: View {
                 }
             }
         }
+        .padding(.horizontal,5)
     }
 }
 

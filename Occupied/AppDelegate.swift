@@ -2,9 +2,11 @@
 
 import UIKit
 import UserNotifications
+import GoogleMobileAds
 
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GADMobileAds.sharedInstance().start(completionHandler: nil)
         UNUserNotificationCenter.current().delegate = self
         requestNotificationAuthorization()
 

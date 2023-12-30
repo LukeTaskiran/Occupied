@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E23AD7866CE41E765FD9A3F /* Pods_OccupiedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39044793E3F3362DC42720B /* Pods_OccupiedTests.framework */; };
+		C64AC8A60DD1D2E7ECC72279 /* Pods_Occupied_OccupiedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A271EA8552D0E9BFED7AE72 /* Pods_Occupied_OccupiedUITests.framework */; };
+		D808B40D11229EA2B32FFD17 /* Pods_Occupied.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9918B38496CC9EC6AAA217E /* Pods_Occupied.framework */; };
 		EA2E9C622B2D4AF300590787 /* OccupiedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C612B2D4AF300590787 /* OccupiedApp.swift */; };
 		EA2E9C642B2D4AF300590787 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C632B2D4AF300590787 /* ContentView.swift */; };
 		EA2E9C662B2D4AF400590787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA2E9C652B2D4AF400590787 /* Assets.xcassets */; };
@@ -16,12 +19,9 @@
 		EA2E9C7F2B2D4AF500590787 /* OccupiedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C7E2B2D4AF500590787 /* OccupiedUITestsLaunchTests.swift */; };
 		EA2E9C8D2B2D4B6C00590787 /* OfficeSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C8C2B2D4B6C00590787 /* OfficeSettingView.swift */; };
 		EA2E9C8F2B2D4B8100590787 /* PartySettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C8E2B2D4B8100590787 /* PartySettingView.swift */; };
-		EA2E9C932B2D4BC000590787 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C922B2D4BC000590787 /* WeatherView.swift */; };
 		EA2E9C952B2D4C1E00590787 /* ImageMatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C942B2D4C1E00590787 /* ImageMatchingView.swift */; };
 		EA2E9C972B2D4C8E00590787 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C962B2D4C8E00590787 /* NotificationsView.swift */; };
 		EA2E9C992B2D4CD800590787 /* FriendsSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C982B2D4CD800590787 /* FriendsSettingView.swift */; };
-		EA2E9C9B2B2D4CE200590787 /* OtherSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C9A2B2D4CE200590787 /* OtherSettingView.swift */; };
-		EA2E9C9F2B2D4DAF00590787 /* ChatWithAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9C9E2B2D4DAF00590787 /* ChatWithAIView.swift */; };
 		EA2E9CAF2B2D4FD000590787 /* AILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9CA12B2D4FCF00590787 /* AILevel.swift */; };
 		EA2E9CB02B2D4FD000590787 /* BoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9CA22B2D4FCF00590787 /* BoardView.swift */; };
 		EA2E9CB12B2D4FD000590787 /* AIPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2E9CA32B2D4FCF00590787 /* AIPlayer.swift */; };
@@ -47,11 +47,17 @@
 		EA880AA22B327F89003B7E8B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA880AA02B327F89003B7E8B /* SoundManager.swift */; };
 		EA880AA52B327FB2003B7E8B /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA880AA32B327FB2003B7E8B /* UserSettings.swift */; };
 		EA880AA62B327FB2003B7E8B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA880AA42B327FB2003B7E8B /* Theme.swift */; };
-		EABCC7EF2B2FC4E9005CA3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EABCC7EE2B2FC4E9005CA3EB /* AppDelegate.swift */; };
+		EAE9EF7B2B3D11E3005CEC67 /* Checkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF7A2B3D11E3005CEC67 /* Checkers.swift */; };
+		EAE9EF7D2B3D1DB2005CEC67 /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF7C2B3D1DB2005CEC67 /* Notes.swift */; };
+		EAE9EF7F2B3D2319005CEC67 /* phone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAE9EF7E2B3D2318005CEC67 /* phone.mp3 */; };
+		EAE9EF822B3D395C005CEC67 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = EAE9EF812B3D395C005CEC67 /* GoogleMobileAds */; };
+		EAE9EF862B3D3DFD005CEC67 /* BannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF852B3D3DFD005CEC67 /* BannerAd.swift */; };
+		EAE9EF882B3D4842005CEC67 /* BannerAdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF872B3D4842005CEC67 /* BannerAdVC.swift */; };
+		EAE9EF8A2B3D4899005CEC67 /* SwiftUIBannerAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE9EF892B3D4899005CEC67 /* SwiftUIBannerAd.swift */; };
+		EAEFA3EB2B362268007CE67D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAEFA3EA2B362268007CE67D /* AppDelegate.swift */; };
 		EAFA30962B338B930071C6B0 /* GameLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA30952B338B930071C6B0 /* GameLibraryView.swift */; };
-		EAFA30992B3391BB0071C6B0 /* AnimatedSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA30982B3391040071C6B0 /* AnimatedSplashScreen.swift */; };
 		EAFA309B2B3398440071C6B0 /* PhoneCallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */; };
-		EAFA309F2B33C0F20071C6B0 /* phone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EAFA309E2B33C0F20071C6B0 /* phone.mp3 */; };
+		EAFE54232B3DF03200B3C2C1 /* InterstitalAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFE54222B3DF03200B3C2C1 /* InterstitalAdView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C3328F7D2F863A02973AAB1 /* Pods-Occupied.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Occupied.debug.xcconfig"; path = "Target Support Files/Pods-Occupied/Pods-Occupied.debug.xcconfig"; sourceTree = "<group>"; };
+		3E89995EEFDB2B61653A2134 /* Pods-OccupiedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OccupiedTests.release.xcconfig"; path = "Target Support Files/Pods-OccupiedTests/Pods-OccupiedTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A271EA8552D0E9BFED7AE72 /* Pods_Occupied_OccupiedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Occupied_OccupiedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CE3054F73D3324020C1992B /* Pods-OccupiedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OccupiedTests.debug.xcconfig"; path = "Target Support Files/Pods-OccupiedTests/Pods-OccupiedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8722B881EEB55DECB00A1A12 /* Pods-Occupied.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Occupied.release.xcconfig"; path = "Target Support Files/Pods-Occupied/Pods-Occupied.release.xcconfig"; sourceTree = "<group>"; };
+		A39044793E3F3362DC42720B /* Pods_OccupiedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OccupiedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B954FB6DAF846F63C064AA26 /* Pods-Occupied-OccupiedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Occupied-OccupiedUITests.debug.xcconfig"; path = "Target Support Files/Pods-Occupied-OccupiedUITests/Pods-Occupied-OccupiedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4D617878AA55053B7789E47 /* Pods-Occupied-OccupiedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Occupied-OccupiedUITests.release.xcconfig"; path = "Target Support Files/Pods-Occupied-OccupiedUITests/Pods-Occupied-OccupiedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9918B38496CC9EC6AAA217E /* Pods_Occupied.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Occupied.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2E9C5E2B2D4AF300590787 /* Occupied.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Occupied.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA2E9C612B2D4AF300590787 /* OccupiedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccupiedApp.swift; sourceTree = "<group>"; };
 		EA2E9C632B2D4AF300590787 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,12 +99,9 @@
 		EA2E9C7E2B2D4AF500590787 /* OccupiedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OccupiedUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA2E9C8C2B2D4B6C00590787 /* OfficeSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeSettingView.swift; sourceTree = "<group>"; };
 		EA2E9C8E2B2D4B8100590787 /* PartySettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartySettingView.swift; sourceTree = "<group>"; };
-		EA2E9C922B2D4BC000590787 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		EA2E9C942B2D4C1E00590787 /* ImageMatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMatchingView.swift; sourceTree = "<group>"; };
 		EA2E9C962B2D4C8E00590787 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		EA2E9C982B2D4CD800590787 /* FriendsSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsSettingView.swift; sourceTree = "<group>"; };
-		EA2E9C9A2B2D4CE200590787 /* OtherSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherSettingView.swift; sourceTree = "<group>"; };
-		EA2E9C9E2B2D4DAF00590787 /* ChatWithAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWithAIView.swift; sourceTree = "<group>"; };
 		EA2E9CA12B2D4FCF00590787 /* AILevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AILevel.swift; path = ../../../../Downloads/AILevel.swift; sourceTree = "<group>"; };
 		EA2E9CA22B2D4FCF00590787 /* BoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardView.swift; path = ../../../../Downloads/BoardView.swift; sourceTree = "<group>"; };
 		EA2E9CA32B2D4FCF00590787 /* AIPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AIPlayer.swift; path = ../../../../Downloads/AIPlayer.swift; sourceTree = "<group>"; };
@@ -115,12 +127,17 @@
 		EA880AA02B327F89003B7E8B /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SoundManager.swift; path = ../../../MemoryMatch/MemMatchMaster/SoundManager.swift; sourceTree = "<group>"; };
 		EA880AA32B327FB2003B7E8B /* UserSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSettings.swift; path = ../../../MemoryMatch/MemMatchMaster/UserSettings.swift; sourceTree = "<group>"; };
 		EA880AA42B327FB2003B7E8B /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = ../../../MemoryMatch/MemMatchMaster/Theme.swift; sourceTree = "<group>"; };
-		EABCC7EE2B2FC4E9005CA3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EABCC7F02B2FC523005CA3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EAE9EF7A2B3D11E3005CEC67 /* Checkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkers.swift; sourceTree = "<group>"; };
+		EAE9EF7C2B3D1DB2005CEC67 /* Notes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
+		EAE9EF7E2B3D2318005CEC67 /* phone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = phone.mp3; path = ../../../../Downloads/phone.mp3; sourceTree = "<group>"; };
+		EAE9EF852B3D3DFD005CEC67 /* BannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAd.swift; sourceTree = "<group>"; };
+		EAE9EF872B3D4842005CEC67 /* BannerAdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdVC.swift; sourceTree = "<group>"; };
+		EAE9EF892B3D4899005CEC67 /* SwiftUIBannerAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBannerAd.swift; sourceTree = "<group>"; };
+		EAEFA3EA2B362268007CE67D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAFA30952B338B930071C6B0 /* GameLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLibraryView.swift; sourceTree = "<group>"; };
-		EAFA30982B3391040071C6B0 /* AnimatedSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedSplashScreen.swift; sourceTree = "<group>"; };
 		EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCallView.swift; sourceTree = "<group>"; };
-		EAFA309E2B33C0F20071C6B0 /* phone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = phone.mp3; path = ../../../Downloads/phone.mp3; sourceTree = "<group>"; };
+		EAFE54222B3DF03200B3C2C1 /* InterstitalAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitalAdView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +145,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE9EF822B3D395C005CEC67 /* GoogleMobileAds in Frameworks */,
+				D808B40D11229EA2B32FFD17 /* Pods_Occupied.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E23AD7866CE41E765FD9A3F /* Pods_OccupiedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,12 +162,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C64AC8A60DD1D2E7ECC72279 /* Pods_Occupied_OccupiedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F89AE59C7920D2CA801C06A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9918B38496CC9EC6AAA217E /* Pods_Occupied.framework */,
+				4A271EA8552D0E9BFED7AE72 /* Pods_Occupied_OccupiedUITests.framework */,
+				A39044793E3F3362DC42720B /* Pods_OccupiedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABEA6F3695201E96A727EFD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C3328F7D2F863A02973AAB1 /* Pods-Occupied.debug.xcconfig */,
+				8722B881EEB55DECB00A1A12 /* Pods-Occupied.release.xcconfig */,
+				B954FB6DAF846F63C064AA26 /* Pods-Occupied-OccupiedUITests.debug.xcconfig */,
+				E4D617878AA55053B7789E47 /* Pods-Occupied-OccupiedUITests.release.xcconfig */,
+				7CE3054F73D3324020C1992B /* Pods-OccupiedTests.debug.xcconfig */,
+				3E89995EEFDB2B61653A2134 /* Pods-OccupiedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA2E9C552B2D4AF300590787 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +199,8 @@
 				EA2E9C712B2D4AF500590787 /* OccupiedTests */,
 				EA2E9C7B2B2D4AF500590787 /* OccupiedUITests */,
 				EA2E9C5F2B2D4AF300590787 /* Products */,
+				ABEA6F3695201E96A727EFD4 /* Pods */,
+				7F89AE59C7920D2CA801C06A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,13 +220,11 @@
 				EABCC7F02B2FC523005CA3EB /* Info.plist */,
 				EA2E9CA02B2D4F1C00590787 /* GamesFunction */,
 				EA2E9C8B2B2D4B5D00590787 /* SettingViews */,
+				EAE9EF8B2B3D48B1005CEC67 /* GoogleAds */,
 				EAFA30972B3390DE0071C6B0 /* Others */,
-				EAFA30982B3391040071C6B0 /* AnimatedSplashScreen.swift */,
 				EA2E9C612B2D4AF300590787 /* OccupiedApp.swift */,
-				EABCC7EE2B2FC4E9005CA3EB /* AppDelegate.swift */,
+				EAEFA3EA2B362268007CE67D /* AppDelegate.swift */,
 				EA2E9C632B2D4AF300590787 /* ContentView.swift */,
-				EAFA309E2B33C0F20071C6B0 /* phone.mp3 */,
-				EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */,
 				EA2E9C652B2D4AF400590787 /* Assets.xcassets */,
 				EA2E9C672B2D4AF400590787 /* Preview Content */,
 			);
@@ -218,7 +262,6 @@
 				EA2E9C8C2B2D4B6C00590787 /* OfficeSettingView.swift */,
 				EA2E9C8E2B2D4B8100590787 /* PartySettingView.swift */,
 				EA2E9C982B2D4CD800590787 /* FriendsSettingView.swift */,
-				EA2E9C9A2B2D4CE200590787 /* OtherSettingView.swift */,
 			);
 			path = SettingViews;
 			sourceTree = "<group>";
@@ -255,14 +298,27 @@
 			path = GamesFunction;
 			sourceTree = "<group>";
 		};
+		EAE9EF8B2B3D48B1005CEC67 /* GoogleAds */ = {
+			isa = PBXGroup;
+			children = (
+				EAE9EF852B3D3DFD005CEC67 /* BannerAd.swift */,
+				EAE9EF872B3D4842005CEC67 /* BannerAdVC.swift */,
+				EAE9EF892B3D4899005CEC67 /* SwiftUIBannerAd.swift */,
+				EAFE54222B3DF03200B3C2C1 /* InterstitalAdView.swift */,
+			);
+			path = GoogleAds;
+			sourceTree = "<group>";
+		};
 		EAFA30972B3390DE0071C6B0 /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				EA2E9C9E2B2D4DAF00590787 /* ChatWithAIView.swift */,
+				EAE9EF7C2B3D1DB2005CEC67 /* Notes.swift */,
 				EAFA30952B338B930071C6B0 /* GameLibraryView.swift */,
 				EA2E9C962B2D4C8E00590787 /* NotificationsView.swift */,
 				EA6B7BEE2B30D95800224846 /* SettingsView.swift */,
-				EA2E9C922B2D4BC000590787 /* WeatherView.swift */,
+				EAE9EF7E2B3D2318005CEC67 /* phone.mp3 */,
+				EAFA309A2B3398440071C6B0 /* PhoneCallView.swift */,
+				EAE9EF7A2B3D11E3005CEC67 /* Checkers.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -274,15 +330,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA2E9C822B2D4AF500590787 /* Build configuration list for PBXNativeTarget "Occupied" */;
 			buildPhases = (
+				6F929A688508E77112DD7EDC /* [CP] Check Pods Manifest.lock */,
 				EA2E9C5A2B2D4AF300590787 /* Sources */,
 				EA2E9C5B2B2D4AF300590787 /* Frameworks */,
 				EA2E9C5C2B2D4AF300590787 /* Resources */,
+				4CA65247EBDC91D56DAF0C7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Occupied;
+			packageProductDependencies = (
+				EAE9EF812B3D395C005CEC67 /* GoogleMobileAds */,
+			);
 			productName = Occupied;
 			productReference = EA2E9C5E2B2D4AF300590787 /* Occupied.app */;
 			productType = "com.apple.product-type.application";
@@ -291,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA2E9C852B2D4AF500590787 /* Build configuration list for PBXNativeTarget "OccupiedTests" */;
 			buildPhases = (
+				3B839AD3E2937654E564EAB8 /* [CP] Check Pods Manifest.lock */,
 				EA2E9C6A2B2D4AF500590787 /* Sources */,
 				EA2E9C6B2B2D4AF500590787 /* Frameworks */,
 				EA2E9C6C2B2D4AF500590787 /* Resources */,
@@ -309,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA2E9C882B2D4AF500590787 /* Build configuration list for PBXNativeTarget "OccupiedUITests" */;
 			buildPhases = (
+				6BBBFD15D942CB9DAD19E51B /* [CP] Check Pods Manifest.lock */,
 				EA2E9C742B2D4AF500590787 /* Sources */,
 				EA2E9C752B2D4AF500590787 /* Frameworks */,
 				EA2E9C762B2D4AF500590787 /* Resources */,
+				279659E3509EDBA20D64137E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -355,6 +419,9 @@
 				Base,
 			);
 			mainGroup = EA2E9C552B2D4AF300590787;
+			packageReferences = (
+				EAE9EF802B3D395C005CEC67 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = EA2E9C5F2B2D4AF300590787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -372,7 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA880A942B327F1D003B7E8B /* Sounds in Resources */,
-				EAFA309F2B33C0F20071C6B0 /* phone.mp3 in Resources */,
+				EAE9EF7F2B3D2319005CEC67 /* phone.mp3 in Resources */,
 				EA2E9C692B2D4AF400590787 /* Preview Assets.xcassets in Resources */,
 				EA2E9C662B2D4AF400590787 /* Assets.xcassets in Resources */,
 			);
@@ -394,6 +461,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		279659E3509EDBA20D64137E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Occupied-OccupiedUITests/Pods-Occupied-OccupiedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Occupied-OccupiedUITests/Pods-Occupied-OccupiedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Occupied-OccupiedUITests/Pods-Occupied-OccupiedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B839AD3E2937654E564EAB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OccupiedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA65247EBDC91D56DAF0C7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Occupied/Pods-Occupied-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Occupied/Pods-Occupied-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Occupied/Pods-Occupied-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BBBFD15D942CB9DAD19E51B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Occupied-OccupiedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F929A688508E77112DD7EDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Occupied-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA2E9C5A2B2D4AF300590787 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,23 +572,26 @@
 				EA2E9CBE2B2D4FF100590787 /* PlayGamesView.swift in Sources */,
 				EA880A9E2B327F7C003B7E8B /* Card.swift in Sources */,
 				EA2E9C642B2D4AF300590787 /* ContentView.swift in Sources */,
+				EAFE54232B3DF03200B3C2C1 /* InterstitalAdView.swift in Sources */,
 				EA2E9CB52B2D4FD000590787 /* GameBoard.swift in Sources */,
 				EA880AA22B327F89003B7E8B /* SoundManager.swift in Sources */,
 				EA2E9CB62B2D4FD000590787 /* Strings.swift in Sources */,
 				EA2E9C8D2B2D4B6C00590787 /* OfficeSettingView.swift in Sources */,
+				EAE9EF7B2B3D11E3005CEC67 /* Checkers.swift in Sources */,
 				EA880AA52B327FB2003B7E8B /* UserSettings.swift in Sources */,
 				EA2E9CB42B2D4FD000590787 /* Matrix.swift in Sources */,
 				EA2E9CB72B2D4FD000590787 /* Minimax.swift in Sources */,
-				EAFA30992B3391BB0071C6B0 /* AnimatedSplashScreen.swift in Sources */,
 				EA2E9CB32B2D4FD000590787 /* TicTacToeViewModel.swift in Sources */,
 				EA2E9C992B2D4CD800590787 /* FriendsSettingView.swift in Sources */,
 				EA2E9CB82B2D4FD000590787 /* TicTacToeGame.swift in Sources */,
+				EAE9EF7D2B3D1DB2005CEC67 /* Notes.swift in Sources */,
+				EAEFA3EB2B362268007CE67D /* AppDelegate.swift in Sources */,
 				EA880A962B327F3F003B7E8B /* MemoryMatchViewModel.swift in Sources */,
 				EAFA30962B338B930071C6B0 /* GameLibraryView.swift in Sources */,
 				EA2E9C952B2D4C1E00590787 /* ImageMatchingView.swift in Sources */,
 				EA880AA12B327F89003B7E8B /* ShakeEffect.swift in Sources */,
-				EA2E9C932B2D4BC000590787 /* WeatherView.swift in Sources */,
 				EA2E9CB02B2D4FD000590787 /* BoardView.swift in Sources */,
+				EAE9EF8A2B3D4899005CEC67 /* SwiftUIBannerAd.swift in Sources */,
 				EA880A982B327F52003B7E8B /* MemoryMatchView.swift in Sources */,
 				EA2E9CB22B2D4FD000590787 /* RowViewContentMatrix.swift in Sources */,
 				EA2E9CBB2B2D4FD000590787 /* RowView.swift in Sources */,
@@ -430,13 +603,12 @@
 				EA880AA62B327FB2003B7E8B /* Theme.swift in Sources */,
 				EA6B7BEF2B30D95800224846 /* SettingsView.swift in Sources */,
 				EA880A9B2B327F72003B7E8B /* Difficulty.swift in Sources */,
-				EABCC7EF2B2FC4E9005CA3EB /* AppDelegate.swift in Sources */,
-				EA2E9C9F2B2D4DAF00590787 /* ChatWithAIView.swift in Sources */,
+				EAE9EF862B3D3DFD005CEC67 /* BannerAd.swift in Sources */,
 				EA2E9CB92B2D4FD000590787 /* GameSymbol.swift in Sources */,
 				EA2E9C622B2D4AF300590787 /* OccupiedApp.swift in Sources */,
-				EA2E9C9B2B2D4CE200590787 /* OtherSettingView.swift in Sources */,
 				EAFA309B2B3398440071C6B0 /* PhoneCallView.swift in Sources */,
 				EA2E9C972B2D4C8E00590787 /* NotificationsView.swift in Sources */,
+				EAE9EF882B3D4842005CEC67 /* BannerAdVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +682,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -573,7 +745,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -594,9 +766,11 @@
 		};
 		EA2E9C832B2D4AF500590787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C3328F7D2F863A02973AAB1 /* Pods-Occupied.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Occupied/Preview Content\"";
@@ -604,11 +778,11 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Occupied/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,6 +790,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukeTaskiran..Occupied;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -624,21 +801,24 @@
 		};
 		EA2E9C842B2D4AF500590787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8722B881EEB55DECB00A1A12 /* Pods-Occupied.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Occupied/Preview Content\"";
 				DEVELOPMENT_TEAM = NN8L79AV4M;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Occupied/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +826,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukeTaskiran..Occupied;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,6 +837,7 @@
 		};
 		EA2E9C862B2D4AF500590787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE3054F73D3324020C1992B /* Pods-OccupiedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -674,6 +858,7 @@
 		};
 		EA2E9C872B2D4AF500590787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E89995EEFDB2B61653A2134 /* Pods-OccupiedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -694,6 +879,7 @@
 		};
 		EA2E9C892B2D4AF500590787 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B954FB6DAF846F63C064AA26 /* Pods-Occupied-OccupiedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -712,6 +898,7 @@
 		};
 		EA2E9C8A2B2D4AF500590787 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4D617878AA55053B7789E47 /* Pods-Occupied-OccupiedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -768,6 +955,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAE9EF802B3D395C005CEC67 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAE9EF812B3D395C005CEC67 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAE9EF802B3D395C005CEC67 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EA2E9C562B2D4AF300590787 /* Project object */;
 }

@@ -1,21 +1,40 @@
 import SwiftUI
 
 struct GameLibraryView: View {
+    @StateObject private var interstitialAdManager = InterstitialAdsView()
+
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
-                NavigationLink(destination: MemoryMatchView(viewModel: MemoryMatchViewModel(difficulty: .easy, theme: .animals))) {
-                    GameButton(title: "Memory Match")
-                }
-
-                NavigationLink(destination: PlayGamesView()) {
-                    GameButton(title: "Tic Tac Toe")
-                }
-
-                NavigationLink(destination: PlayGamesView()) {
-                    GameButton(title: "Checkers")
+            ZStack {
+                VStack(spacing: 20) {
+                    NavigationLink(destination: MemoryMatchView(viewModel: MemoryMatchViewModel(difficulty: .easy, theme: .animals))) {
+                        GameButton(title: "Memory Match")
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        interstitialAdManager.displayInterstitialAd()                           })
+                
+                    
+                    NavigationLink(destination: PlayGamesView()) {
+                        GameButton(title: "Tic Tac Toe")
+                    }.simultaneousGesture(TapGesture().onEnded{
+                        interstitialAdManager.displayInterstitialAd()                           })
+                
+                    
+                    
+                        NavigationLink(destination: Checkers()) {
+                            GameButton(title: "Checkers")
+                        }.simultaneousGesture(TapGesture().onEnded{
+                            interstitialAdManager.displayInterstitialAd()                           })
+                    
+                    SwiftUIBannerAd(adPosition: .bottom, adUnitId: "ca-app-pub-3940256099942544/2934735716")
+                        .frame(height: 125,alignment: .center)
+                        .padding()
+                        
                 }
             }
+            .onAppear{
+                        interstitialAdManager.loadInterstitialAd()
+                    }
+                    .disabled(!interstitialAdManager.interstitialAdLoaded)
             .navigationBarTitle("Game Library")
             .padding()
         }
